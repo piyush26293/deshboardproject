@@ -1,0 +1,35 @@
+Here are some interview-type questions and answers based on the React to-do list app example:
+
+*Q1: What is the purpose of the useState hook in the ToDoList component?*
+
+A1: The useState hook is used to manage state in the ToDoList component. It initializes two state variables: tasks to store the list of tasks and newTask to store the input value for new tasks.
+
+*Q2: How does the handleSubmit function work?*
+
+A2: The handleSubmit function is called when the form is submitted. It prevents the default form submission behavior, adds the new task to the tasks array, and resets the newTask input value.
+
+*Q3: What is the purpose of the key prop in the tasks.map() function?*
+
+A3: The key prop is used to assign a unique identifier to each task in the list. This helps React keep track of the tasks and optimize rendering.
+
+*Q4: How does React handle state changes in the ToDoList component?*
+
+A4: When the state changes (e.g., a new task is added), React re-renders the component with the updated state. The useState hook ensures that the component re-renders with the latest state values.
+
+Q5: What is the difference between a controlled component and an uncontrolled component in React?
+
+A5: A controlled component (like the input field in the to-do list app) has its value controlled by React state. An uncontrolled component (like a plain HTML input field) manages its own state.
+
+Q6: How would you optimize the performance of the to-do list app?
+
+A6: To optimize performance, you could use React memoization (e.g., useMemo or useCallback) to prevent unnecessary re-renders, or use a more efficient data structure (e.g., a hash map) to store tasks.
+
+*Q7: Can you explain the concept of a "closure" in JavaScript, as it relates to the ToDoList component?*
+
+A7: A closure is when a function (like handleSubmit) has access to its own scope and the outer scope (the ToDoList component). This allows the function to use and update the component's state variables.
+
+Q8: How does React handle event handling, such as the form submission in the to-do list app?
+
+A8: React uses a synthetic event system to handle events. When the form is submitted, React calls the handleSubmit function with a synthetic event object, allowing the function to access event properties and prevent default behavior.
+
+Let me know if you'd like me to add more questions and answers!
